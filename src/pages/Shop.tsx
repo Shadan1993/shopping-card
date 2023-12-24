@@ -1,11 +1,11 @@
 import { Col, Row } from "react-bootstrap";
 import ProdactItem from "../components/ProdactItem";
-import { ProdactList } from "../data/Item";
+import { ProductList } from "../data/Item";
 const Shop = () => {
   return (
     <>
       <Row xs={1} md={4} className="g-4">
-        {ProdactList.map((item) => (
+        {ProductList.map((item) => (
           <Col key={item.id} align="center">
             <ProdactItem
               id={item.id}
